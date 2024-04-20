@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">    
+</head>
+<body style="background-color: black;">
+    <header class="Header_Contact">
+        <h1 id="contactme">Contact Me</h1>
+        <p>Hii I'm For Work</p>
+        <p>Email - mdarslaan27@gmail.com</p>
+    </header>
+    <main class="main_contact">
+        <h2 style="color: red;">Drop Me a Line</h2>
+        <form class="form" id="contactForm" action="/submit_form" method="post">
+            <label for="name">Name:</label><br><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <div class="button-wrapper">
+                <input id="button_Submit" type="submit" value="Send">
+            </div>
+        </form>
+        <div id="successMessage" style="display: none; color: green;">Form submitted successfully!</div>
+    </main>
+    <footer>
+        <p>© 2023 Md Arslaan</p>
+    </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            
+            // Get the form data
+            let formData = new FormData(this);
+            
+            // Display the form data (for demonstration purposes)
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+            
+            // Perform any additional actions, such as sending the data to a server using AJAX
+            // For example, using fetch API:
+            fetch('/submit_form', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                // Show success message
+                document.getElementById('successMessage').style.display = 'block';
+                // You can also reset the form here if needed
+                // document.getElementById('contactForm').reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Handle errors, e.g., display an error message to the user
+            });
+        });
+    </script>
+</body>
+</html>

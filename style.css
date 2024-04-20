@@ -1,0 +1,181 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0px 200px 0px 100px;
+    
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    background-color: black;
+    color: azure;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+
+    #img {
+        height: 700px;
+        width: 50%;
+        transition: transform 0.3s;
+    }
+    
+    #img:hover {
+        transform: scale(1.1);
+    }
+    
+
+
+#heading1
+{
+    font-size: 220%;
+}
+
+#heading2
+{
+    font-size: 220%;
+}
+#heading
+{
+    color: red;
+    font-size: 250%;
+}
+
+#name12
+{
+    color: red;
+    font-size: 230%;
+}
+.container{
+    font-size: 120%;
+}
+#contactme
+{
+    color: red;
+}
+.Header_Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: x-large;
+}
+
+.main_contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form {
+    border: solid red;
+    border-radius: 5%;
+    border-style: dashed;
+    padding: 5% 5% 5% 5%;
+   
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#button_Submit {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: red;
+    font-size: 20px;
+    border-radius: 10%;
+    
+}
+
+
+
+#name
+{
+   
+    border-color: red;
+    font-size: x-large;
+}
+
+#email
+{
+    
+   border-color: red;
+   font-size: x-large;
+}
+
+#message
+{
+   
+    border-color: red;
+    font-size: x-large;
+}
+.About_content{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.main_contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row
+{
+    background-color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: red;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: darkred;
+}

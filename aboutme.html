@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: black;color: white; ">
+    <div class="row">
+        <div class="column">
+            <img style="height: 800px;" src="1.png">
+        </div>
+        <div class="column">
+            <h1 style="text-align: center;  color: red";>About Me</h1>
+            <p>Hello! I'm a passionate web developer currently pursuing my Bachelor of Computer Applications (BCA) at
+                the Institute of Information Technology and Management. My journey in the world of web development has
+                equipped me with a diverse skill set that includes HTML, CSS, JavaScript, React, C++, and Python.
+                I enjoy the creative process of designing and building user-friendly websites that not only look great
+                but also provide a seamless experience. My curiosity and love for learning drive me to stay updated with
+                the latest technologies and trends in the field of web development.</p>
+        <div class="row">
+            <div class="column">
+        <h2 style="color: red;">Skills</h2>
+        <ul>
+            <li>UI/UX Designing Web/App interfaces</li><br>
+            <li>Web Development Web app Development</li><br>
+            <li>C++</li><br>
+            <li>Python</li><br>
+            <li>Data Base Management (SQL)</li>
+        </ul>
+            </div>
+        <div class="column">
+        <h2  style="color: red;">Experience</h2>
+        <p>Experience in Web Development 1 year</p>
+        <h2>Education</h2>
+        <p>Pursuing BCA </p>
+            </div>
+            </div>
+    </div></div>
+</body>
+
+</html>

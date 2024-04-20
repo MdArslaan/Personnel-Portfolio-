@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume Download</title>
+  </head>
+  <body>
+    <h1>Download My Resume</h1>
+    <button type="button" onclick="downloadResume()">Download Resume</button>
+    <script>
+      function downloadResume() {
+        var link = document.createElement("a");
+        link.href = "Resume.pdf";
+        link.download = "Md Arslaan Resume.pdf";
+        link.click();
+      }
+    </script>
+  </body>
+</html>
